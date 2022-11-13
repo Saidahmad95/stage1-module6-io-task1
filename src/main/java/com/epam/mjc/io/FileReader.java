@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class FileReader {
 
-    public Profile getDataFromFile(File file) throws FileNotFoundException {
+    public Profile getDataFromFile(File file) {
         Profile profile = new Profile();
 
         try (java.io.FileReader fileReader = new java.io.FileReader(file)) {
